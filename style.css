@@ -1,6 +1,325 @@
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+@font-face{
+    font-family: can;
+    src: url(./Can.ttf);
+}
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #C5BDB3;
+}
+#nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+
+}
+#nav h2{
+    font-size: 15px;
+    font-weight: 100;
+
+}
+#nav img{
+    height: 100px;
+    width: 170px;
+}
+/* Element*/
+
+#elem{
+    height: 330px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* background-color: red;*/
+   margin-top: 30px;
+
+}
+#elem1{
+    height: 100%;
+    width: 30%;
+    /*background-color: blue;*/
+    margin: 20px 50px;
+    padding-top: 30px;
+}
+#elem1 #image1 img{
+    height: 100%;
+    width: 100%;
+}
+#image1:hover img{
+    scale: 1.1;
+    transition: 0.5s;
+
+}
+#elem1 h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#elem1 p{
+    font-size: 20px;
+    font-weight: 100;
+}
+#elem2{
+    height: 100%;
+    width: 30%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  /*  background-color: blue;*/
+    margin: 20px 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+#elem2 h2{
+    
+    font-size: 50px;
+    font-weight: 300;
+    
+}
+#elem2 h3{
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#elem3{
+    height: 100%;
+    width: 30%;
+   /* background-color: blue;*/
+    margin: 20px 40px;
+    padding-top: 30px;
+}
+#elem3 #image1 img{
+    height: 100%;
+    width: 100%;
+}
+#elem3 h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#elem3 p{
+    font-size: 20px;
+    font-weight: 100;
+}
+/*miranda*/
+#page1 h1{
+    height: 420px;
+    margin:20px 40px ;
+    font-size: 500px;
+    font-weight: 180;
+    font-family: can;
+    background-color: black;
+    color: #C5BDB3 ;
+    font-family: can;
+    line-height: 420px;
+
+}
+/*page2*/
+#page2{
+    height: 150vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+   /* background-color: red;*/
+    margin: 60px 40px;
+}
+#pageleft{
+    height: 100%;
+    width: 33%;
+    border-right: 2px solid black;
+    padding-right: 70px;
+
+}
+#pageleft h2{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: can;
+}
+#pageleft h1{
+    font-size: 150px;
+    font-weight: 100;
+    font-family: can;
+}
+#pageleft span{
+   
+    border: 1px solid black;
+    background-color: black;
+    color: beige;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: can;
+}
+#pageleft p{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: can;
+}
+#pageleft img{
+    height: 50%;
+    width: 100%;
+}
+#pageright{
+    height: 100%;
+    width: 70%;
+
+}
+#pageright h1{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: can;
+}
+#pageright img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+
+}
+/*page 3*/
+#page3{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+#page3 h1{
+    width: 75%;
+    height: 72%;
+    font-size: 450px;
+    font-weight: 70;
+    letter-spacing: -10px;
+    font-family: can;
+    background-color: black;
+    color: #C5BDB3 ;
+    margin: 20px 40px;
+    line-height: 400px;
+   
+}
+#page3 img{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px;
+    padding-bottom: 25px;
+    
+}
+/* page4*/
+
+#page4{
+    height: 100vh;
+    width: 95%;
+    margin: 20px 40px;
+    display: flex;
+
+
+}
+#page4left{
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid black;
+    padding-right: 50px;
+}
+#page4right{
+    height: 100%;
+    width: 50%;
+}
+#divtop{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+#left{
+    width: 90%;
+    border-right: 2px solid black;
+    padding-right: 50px;
+}
+#left h2{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: domain;
+}
+#left p{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: domain;
+    margin: 20px 0px;
+}
+#left h3{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: domain;
+    
+}
+#right img{
+    height: 150px;
+    width: 400px;
+}
+#right h1{
+    font-family: domain;
+    padding: 10px 0px;
+}
+#right p{
+    font-family: domian;
+    font-size: 20px;
+    font-weight: 100;
+}
+#divbottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 20px 0px;
+}
+#page4right{
+    padding-left: 20px;
+}
+#page4right h2{
+    font-size: 90px;
+    font-weight: 90;
+    font-family: domain;
+   
+}
+#page4right h1{
+    font-size: 150px;
+    font-weight: 100;
+    font-family: domain;
+    line-height: 100px;
+}
+#page4right p{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: domain;
+    margin: 30px 0px;
+}
+#circle{
+    height: 200px ;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+#circle h2{
+    font-size: 70px;
 }
